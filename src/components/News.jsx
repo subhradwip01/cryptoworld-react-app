@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import moment from "moment";
 import { Select, Typography, Row, Col, Avatar, Card } from "antd";
-
+import Loader from "./Loader";
 import { useGetCryptoNewsQuery } from "../services/crypto-news-api";
 import { useGetCryptosQuery } from "../services/crypto-api";
 
@@ -21,10 +21,8 @@ const News = ({simplified}) => {
 
   const { data:cryptoList } = useGetCryptosQuery(100);
   
-  if (isFetching) {
-    return (
-        <p>Loading...</p> 
-    );
+  if(isFetching){
+    return <Loader/>
   }
   
   console.log(cryptoNews);
