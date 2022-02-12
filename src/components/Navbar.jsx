@@ -36,7 +36,7 @@ const Navbar = () => {
             <Typography.Title level={2} className="logo">
                 <Link to="/">CryptoWorld</Link>
             </Typography.Title>
-            <Button className="menu-control-conatainer" onClick={()=>setActiveMenu(true)}>
+            <Button className="menu-control-conatainer" onClick={()=>setActiveMenu(!activeMenu)}>
                 <MenuOutlined/>
             </Button>
         </div>
