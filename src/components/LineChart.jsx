@@ -1,6 +1,9 @@
 import React from 'react';
-import { Line } from 'react-chartjs-2';
+
 import { Col, Row, Typography } from 'antd';
+import {Chart as ChartJS,} from 'chart.js/auto'
+import { Line } from 'react-chartjs-2'
+  
 
 const { Title } = Typography;
 
@@ -53,7 +56,13 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
           <Title level={5} className="current-price">Current {coinName} Price: $ {currentPrice}</Title>
         </Col>
       </Row>
-      <Line data={data} options={options} />
+      <Line data={data}  options={{
+                elements: {
+                  point: {
+                    radius: 1,
+                  },
+                },
+              }} />
     </>
   );
 };
