@@ -50,7 +50,12 @@ a:hover{
     display: flex;
     padding: 20px;
     align-items: center;
+    justify-content: space-between
     width: 100%;
+}
+.logo-container-main{
+    display: flex;
+    align-items: center;
 }
 .logo{
     margin:0 0 0 15px;
