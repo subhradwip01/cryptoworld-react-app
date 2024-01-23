@@ -59,6 +59,7 @@ a:hover{
 }
 .logo{
     margin:0 0 0 15px;
+    padding-bottom: 0;
 }
 .logo a{
    color: white;
