@@ -59,7 +59,7 @@ a:hover{
 }
 .logo{
     margin-left:15px;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;;
 }
 .logo a{
    color: white;
