@@ -32,10 +32,12 @@ const Navbar = () => {
   return (
     <div className="nav-container">
         <div className="logo-container">
+            <div className="logo-container-main">
             <Avatar src={icon} size="large"/>
             <Typography.Title level={2} className="logo">
                 <Link to="/">CryptoWorld</Link>
             </Typography.Title>
+            </div>
             {screenSize<768 && 
             <Button className="menu-control-conatainer" onClick={()=>setActiveMenu(!activeMenu)}>
                 <MenuOutlined/>
