@@ -58,8 +58,8 @@ a:hover{
     align-items: center;
 }
 .logo{
-    margin:0 0 0 15px;
-    padding-bottom: 0;
+    margin-left:15px;
+    margin-bottom: 0;
 }
 .logo a{
    color: white;
